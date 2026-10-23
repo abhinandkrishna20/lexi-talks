@@ -2,6 +2,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 const cases = [
   {
@@ -114,7 +115,9 @@ export default function CaseStudiesPage() {
 
         <div className="relative mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-sm text-[#6941A5]">
-            <a href="/" className="hover:underline">Home</a>
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>
             <span>/</span>
             <span>Case studies</span>
           </div>
@@ -337,7 +340,7 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white">
+      {/* <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div>
             <a href="/" className="font-bold text-[#183B56]">Lexi Talks</a>
@@ -348,7 +351,7 @@ export default function CaseStudiesPage() {
             and do not represent actual court decisions or individual legal advice.
           </p>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }

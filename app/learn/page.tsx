@@ -2,6 +2,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 const subjects = [
   {
@@ -195,12 +196,13 @@ export default function LearnPage() {
         <div className="pointer-events-none absolute -bottom-28 left-1/4 h-64 w-64 rounded-full bg-[#E7EEFF] opacity-80 blur-2xl" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8">
-          <a
-            href="/"
+          <Link
+            href="/"   
+       
             className="inline-flex items-center gap-2 text-sm font-semibold text-[#167D78] hover:underline"
           >
             <span aria-hidden="true">←</span> Back to home
-          </a>
+          </Link>
 
           <div className="mt-8 grid items-center gap-10 lg:grid-cols-[1fr_340px]">
             <div>
@@ -520,29 +522,17 @@ export default function LearnPage() {
                 learning features will be introduced in a later development step.
               </p>
             </div>
-            <a
+            <Link
               href="/"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-[#183B56] transition hover:bg-[#E5F5F2]"
             >
               Back to home <span>→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <div>
-            <a href="/" className="font-bold text-[#183B56]">Lexi Talks</a>
-            <p className="mt-1 text-sm text-slate-500">Law, made easier.</p>
-          </div>
-          <p className="max-w-2xl text-xs leading-6 text-slate-500">
-            Educational content only. Always check applicable legislation and
-            authoritative sources. This website does not replace advice on
-            individual legal circumstances.
-          </p>
-        </div>
-      </footer>
+      
     </main>
   );
 }

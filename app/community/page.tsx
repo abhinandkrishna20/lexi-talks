@@ -2,6 +2,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 const initialQuestions = [
   {
@@ -216,7 +217,9 @@ export default function CommunityPage() {
 
         <div className="relative mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-sm text-[#176943]">
-            <a href="/" className="hover:underline">Home</a>
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>
             <span>/</span>
             <span>Community</span>
           </div>
@@ -317,7 +320,7 @@ export default function CommunityPage() {
               The learning community
             </p>
             <h2 className="mt-2 text-2xl font-bold text-[#183B56] sm:text-3xl">
-              Let's talk law 💭
+              Let&#39;s talk law 💭
             </h2>
             <p className="mt-3 text-slate-600">
               Explore questions from fellow learners.
@@ -535,7 +538,7 @@ export default function CommunityPage() {
                   Ask your question
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Tell the community what you're trying to understand. Clear
+                  Tell the community what you&#39;re trying to understand. Clear
                   questions help others give useful answers.
                 </p>
               </div>
@@ -616,7 +619,7 @@ export default function CommunityPage() {
 
               <div className="rounded-xl bg-[#FFF3DE] p-4 text-xs leading-5 text-[#8C5410]">
                 🔒 Demo mode: this question will exist only in the current page
-                state. Don't include confidential personal details or sensitive
+                state. Don&#39;t include confidential personal details or sensitive
                 information about a real legal matter.
               </div>
 
@@ -640,19 +643,7 @@ export default function CommunityPage() {
         </div>
       )}
 
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <div>
-            <a href="/" className="font-bold text-[#183B56]">Lexi Talks</a>
-            <p className="mt-1 text-sm text-slate-500">Law, made easier.</p>
-          </div>
-          <p className="max-w-2xl text-xs leading-6 text-slate-500">
-            Educational discussion only, not individual legal advice. Avoid
-            posting confidential information. Verify legal claims against
-            authoritative sources.
-          </p>
-        </div>
-      </footer>
+      
     </main>
   );
 }

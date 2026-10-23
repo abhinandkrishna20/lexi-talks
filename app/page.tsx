@@ -51,7 +51,7 @@ const features = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FAF9F6] text-[#344054]">
-      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur">
+      {/* <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <a href="/" className="flex items-center gap-3">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#183B56] text-xl text-white">
@@ -76,7 +76,7 @@ export default function Home() {
             Start learning
           </a>
         </div>
-      </header>
+      </header> */}
 
       <section className="overflow-hidden border-b border-[#E4E7EC] bg-[#F0F6F5]">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:py-28 lg:px-8">
@@ -294,7 +294,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white">
+      {/* <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div>
             <p className="font-bold text-[#183B56]">Lexi Talks</p>
@@ -306,7 +306,7 @@ export default function Home() {
             individual circumstances.
           </p>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }

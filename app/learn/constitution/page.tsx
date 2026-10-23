@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const topics = [
   {
@@ -176,9 +177,13 @@ export default function ConstitutionPage() {
 
         <div className="relative mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-sm text-[#23478B]">
-            <a href="/" className="hover:underline">Home</a>
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>
             <span>/</span>
-            <a href="/learn" className="hover:underline">Learn</a>
+            <Link href="/learn" className="hover:underline">
+              Learn
+            </Link>
             <span>/</span>
             <span className="font-semibold">Constitution</span>
           </div>
@@ -508,7 +513,7 @@ export default function ConstitutionPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white">
+      {/* <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div>
             <a href="/" className="font-bold text-[#183B56]">Lexi Talks</a>
@@ -519,7 +524,7 @@ export default function ConstitutionPage() {
             and seek appropriate professional advice for individual matters.
           </p>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }

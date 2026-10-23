@@ -2,6 +2,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 const subjects = [
   { name: "Constitution", emoji: "⚖️", color: "bg-[#E7EEFF]", text: "text-[#23478B]", border: "border-[#D1DEFF]" },
@@ -196,7 +197,9 @@ export default function RevisionPage() {
 
         <div className="relative mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-sm text-[#8C5410]">
-            <a href="/" className="hover:underline">Home</a>
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>
             <span>/</span>
             <span>Revision</span>
           </div>
@@ -215,12 +218,12 @@ export default function RevisionPage() {
                 to help you revisit Indian law at your own pace.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#notes" className="rounded-xl bg-[#8C5410] px-6 py-3.5 font-semibold text-white transition hover:bg-[#70410C]">
+                <Link href="#notes" className="rounded-xl bg-[#8C5410] px-6 py-3.5 font-semibold text-white transition hover:bg-[#70410C]">
                   Explore revision notes →
-                </a>
-                <a href="#quiz" className="rounded-xl border border-[#E8D0A7] bg-white px-6 py-3.5 font-semibold text-[#8C5410] transition hover:border-[#8C5410]">
+                </Link>
+                <Link href="#quiz" className="rounded-xl border border-[#E8D0A7] bg-white px-6 py-3.5 font-semibold text-[#8C5410] transition hover:border-[#8C5410]">
                   Try a quick quiz 🧠
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -527,18 +530,7 @@ export default function RevisionPage() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <div>
-            <a href="/" className="font-bold text-[#183B56]">Lexi Talks</a>
-            <p className="mt-1 text-sm text-slate-500">Law, made easier.</p>
-          </div>
-          <p className="max-w-2xl text-xs leading-6 text-slate-500">
-            Educational revision material only. Check the current law and
-            authoritative legal sources before relying on any legal proposition.
-          </p>
-        </div>
-      </footer>
+     
     </main>
   );
 }
